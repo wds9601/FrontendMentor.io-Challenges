@@ -1,0 +1,37 @@
+:root {
+    --color-neutral: hsl(0, 0%, 59%);
+    --color-main-bg: hsl(185, 75%, 39%);
+    --color-card-bg: white;
+    --color-font-card-bold: hsl(229, 23%, 23%);
+
+    --font-large: 18px;
+    --font: 'Kumbh Sans', sans-serif;
+}
+
+html, body {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: var(--color-main-bg);
+    display: flex;
+    height: 100vh;
+}
+
+.bg-bubble {
+    position: absolute;
+}
+
+#bubble-top {
+    top: -70%;
+    left: -20%;
+}
+
+#bubble-bottom {
+    bottom: -80%;
+    right: -20%;
+}
+
+/* mobile: 375px
+desktop: 1440px */
