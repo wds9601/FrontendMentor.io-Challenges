@@ -12,102 +12,106 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;700;800&display=swap" rel="stylesheet">
 
     <title>Social proof section</title>
   </head>
   <body>
-    <div class="flex flex-col z-0 justify-between">
-      <image class="absolute top-0" src="./images/bg-pattern-top-mobile.svg">
-      <image class="absolute -bottom-0" src="./images/bg-pattern-bottom-mobile.svg">
-    </div>
-
-    <div class="p-6 my-10">
-      <div class="text-center flex-auto flex-col justify-around " id="hero-div">
-        <h1 class="py-4 px-6" id="hero-text">10,000+ of our users love our products.</h1>
-
-        <p id="hero-subtext">We only provide great products combined with excellent customer service.
-        See what our satisfied customers are saying about our services.</p>
-      </div>
+    <div id="wrapper-all">
+      <image class="bg-image" src="./images/bg-pattern-top-mobile.svg">
+      <image class="bg-image" src="./images/bg-pattern-bottom-mobile.svg">
+  
+      <div id="wrapper-content">
+        <div class="container" id="hero-div">
+          <h1 id="hero-heading">10,000+ of our users love our products.</h1>
+  
+          <p id="hero-text">We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.</p>
+        </div>
+          
+        <div class="container" id="ratings-div">
+          <div id="rating-box">
+            <div id="stars">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+            </div>
+            <p class="rating-text">Rated 5 Stars in Reviews</p>
+          </div>
+          <div id="rating-box">
+            <div id="stars">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+            </div>
+            <p class="rating-text">Rated 5 Stars in Report Guru</p>
+          </div>
+          <div id="rating-box">
+            <div id="stars">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+              <image src="./images/icon-star.svg">
+            </div>
+            <p class="rating-text">Rated 5 Stars in BestTech</p>
+          </div>
+        </div>
         
-      <div class="container" id="ratings-div">
-        <div id="rating-box">
-          <div id="stars">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
+        <div class="container" id="personals-div">
+          <div class="personal-box">
+            <image src="./images/image-colton.jpg">
+            <p class="name">Colton Smith</p>
+            <p class="title">Verified Buyer</p>
+            <p class="review">
+              "We needed the same printed design as the one we had ordered a week prior.
+              Not only did they find the original order, but we also received it in time.
+              Excellent!"
+            </p>
           </div>
-          <p class="rating-text">Rated 5 Stars in Reviews</p>
-        </div>
-        <div id="rating-box">
-          <div id="stars">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
+  
+          <div class="personal-box">
+            <image src="./images/image-irene.jpg">
+            <p class="name">Irene Roberts</p>
+            <p class="title">Verified Buyer</p>
+            <p class="review">
+              "Customer service is always excellent and very quick turn around. Completely
+              delighted with the simplicity of the purchase and the speed of delivery."
+            </p>
           </div>
-          <p class="rating-text">Rated 5 Stars in Report Guru</p>
-        </div>
-        <div id="rating-box">
-          <div id="stars">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
-            <image src="./images/icon-star.svg">
+  
+          <div class="personal-box">
+            <image src="./images/image-anne.jpg">
+            <p class="name">Anne Wallace</p>
+            <p class="title">Verified Buyer</p>
+            <p class="review">
+              "Put an order with this company and can only praise them for the very high
+              standard. Will definitely use them again and recommend them to everyone!"
+            </p>
           </div>
-          <p class="rating-text">Rated 5 Stars in BestTech</p>
         </div>
-      </div>
-      
-      <div class="container" id="personals-div">
-        <div class="personal-box">
-          <image src="./images/image-colton.jpg">
-          <p class="name">Colton Smith</p>
-          <p class="title">Verified Buyer</p>
-          <p class="review">
-            "We needed the same printed design as the one we had ordered a week prior.
-            Not only did they find the original order, but we also received it in time.
-            Excellent!"
-          </p>
-        </div>
-
-        <div class="personal-box">
-          <image src="./images/image-irene.jpg">
-          <p class="name">Irene Roberts</p>
-          <p class="title">Verified Buyer</p>
-          <p class="review">
-            "Customer service is always excellent and very quick turn around. Completely
-            delighted with the simplicity of the purchase and the speed of delivery."
-          </p>
+  
+        
+        <div class="container" id="footer">
+          <div class="attribution">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+            </a>
+            . Coded by 
+            <a href="#">
+            WDS Dev
+            </a>
+            .
+          </div>
         </div>
 
-        <div class="personal-box">
-          <image src="./images/image-anne.jpg">
-          <p class="name">Anne Wallace</p>
-          <p class="title">Verified Buyer</p>
-          <p class="review">
-            "Put an order with this company and can only praise them for the very high
-            standard. Will definitely use them again and recommend them to everyone!"
-          </p>
-        </div>
-      </div>
-
-      
-
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-        Frontend Mentor
-        </a>
-        . Coded by 
-        <a href="#">
-        WDS Dev
-        </a>
-        .
       </div>
     </div>
   </body>
