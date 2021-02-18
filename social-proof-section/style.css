@@ -1,14 +1,199 @@
-html, body {
+:root {
+	--primary: hsl(300, 43%, 22%);
+	--secondary: hsl(333, 80%, 67%);
+
+	--dark-gm: hsl(303, 10%, 53%);
+	--light-gm: hsl(300, 24%, 96%);
+	--white: hsl(0, 0%, 100%);
+
+	--mobile: 375px;
+	--desktop: 1440px;
+
+	--font-fam-body: 'Spartan', 'sans-serif';
+	--font-light: 400;
+	--font-reg: 500;
+	--font-bold: 700;
+	--font-size-copy: 15px;
+}
+
+html,
+body {
+	margin: 0 auto;
+	box-sizing: border-box;
+	font-family: var(--font-fam-body);
+	padding: 0.7em;
+	background-color: var(--white);
+}
+
+.bg-image {
+	position: absolute;
+}
+
+#bg-top {
+    top: 0px;
+    left: 0px;
+}
+
+#bg-bottom {
+    bottom: -100%;
+    right: 0px;
+}
+
+.container {
+	margin-bottom: 3em;
+}
+
+#hero-div {
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#hero-heading {
+	color: var(--primary);
+}
+
+#hero-text {
+	color: var(--dark-gm);
+	line-height: 1.75em;
+	font-size: 0.9em;
+}
+
+.rating-box {
+	border-radius: 8px;
+	background-color: var(--light-gm);
+	text-align: center;
+	margin: 0.5em 0 1em 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 1em;
+	min-height: 3em;
+}
+
+.stars img {
+	padding: 0 0.15em 0.7em 0.15em;
+}
+
+.rating-text {
+	font-size: 0.9em;
+	font-weight: var(--font-bold);
+	color: var(--primary);
+	margin: 0 auto;
+}
+
+.personal-box {
+	border-radius: 8px;
+	background-color: var(--primary);
+    padding: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+.p-header {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.p-header-img {
+
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 1em;
+}
+
+.p-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.name {
+	color: var(--light-gm);
+    font-weight: var(--font-bold);
     margin: 0 auto;
-    box-sizing: border-box;
-    font-size: 100%;
+}
+
+.title {
+	color: var(--secondary);
+    font-weight: var(--font-reg);
+    margin: 0.2em auto;
+}
+
+.review {
+	color: var(--light-gm);
+	font-size: var(--font-size-copy);
+    line-height: 1.5em;
+    margin-bottom: 0;
 }
 
 .attribution {
-    font-size: 11px;
-    text-align: center;
+	font-size: 11px;
+	text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+	color: hsl(228, 45%, 44%);
+}
+
+
+/*---- Desktop Styling ----*/
+@media screen and (min-width: 375px) {
+    html, body {
+        padding: 3em;
+    }
+
+    #wrapper-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #hero-div {
+        max-width: 45%;
+        text-align: left;
+
+    }
+
+    #hero-heading {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    #hero-text {
+        min-width: 100%;
+    }
+
+    #ratings-div {
+        min-width: 55%;
+    }
+
+    .wrapper-rb {
+        display: flex;
+        min-width: 100%;
+    }
+
+    .rating-box {
+        display: flex;
+        flex-wrap: none;
+        min-width: 80%;
+        max-height: 2em;
+    }
+
+    #rb-1 {
+        justify-content: flex-start;
+    }
+
+    #rb-2 {
+        justify-content: center;
+    }
+
+    #rb-3 {
+        justify-content: flex-end;
+    }
+
+
 }
