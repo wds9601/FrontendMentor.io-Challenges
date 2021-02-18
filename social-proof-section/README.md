@@ -1,9 +1,12 @@
 # Frontend Mentor - Social proof section
 
+## Design Proof
 ![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
 
+## My Desktop Layout
 ![screen shot desktop view final solution](./images/final-layout-desktop.png)
 
+## My Mobile Layout
 ![screen shot mobile view final solution](./images/final-layout-mobile.png)
 
 ### Or
