@@ -10,5 +10,6 @@ They give a "client brief" and provide design files, style-guides and leave the 
 - This repo contains completed FrontendMentor.io challenges labeled by project name.  
 - Each project folder contains all provided starter and design files along with my solution code.
 - In each project README file I have added images of the desired challenge output alongside my solution layout for easy visual comparison.  The idea is that they look the same!
+- Also, click the link for the working demo site to see the project *'in the wild'*
 
 **Thanks for taking a look!**
